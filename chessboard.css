@@ -16,10 +16,10 @@ td {
     height: 90px;
 }
 tr:nth-child(odd) td:nth-child(even){
-background-color: black;
+background-color: rgb(70, 65, 65);
 }
 tr:nth-child(even) td:nth-child(odd){
-    background-color: black;
+    background-color: rgb(70, 65, 65);
 }
 tr:nth-child(odd) td:nth-child(odd){
     background-color: white;
