@@ -6,24 +6,27 @@ body {
     background-color: rgba(13, 189, 80, 0.507);
 }
 table { 
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     border: 0.5px solid black;
     padding: 0;
     margin: auto;
+    margin-top: 100px;
+    background-color: black;
 }
 td {
     width: 90px;
     height: 90px;
 }
-tr:nth-child(odd) td:nth-child(even){
-background-color: rgb(70, 65, 65);
-}
-tr:nth-child(even) td:nth-child(odd){
-    background-color: rgb(70, 65, 65);
-}
-tr:nth-child(odd) td:nth-child(odd){
+.light-cell {
     background-color: white;
-    }
-    tr:nth-child(even) td:nth-child(even){
-        background-color: white;
-    }
+}
+.dark-cell {
+    background-color: rgb(94, 89, 89);
+}
+.selected {
+background-color: rgba(103, 247, 175, 0.836);
+}
+img {
+    width: 60px;
+    height: 60px;
+}
