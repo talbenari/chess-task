@@ -33,9 +33,9 @@ class Piece {
         } else if (this.type === BISHOP) {
             relativeMoves = this.getBishopRelativeMoves();
         } else if (this.type === KING) {
-            // TODO: Get moves
+            relativeMoves = this.getKingtRelativeMoves();
         } else if (this.type === QUEEN) {
-            // TODO: Get moves
+            relativeMoves = this.getQueentRelativeMoves();
         } else {
             console.log("Unknown type", type)
         }
@@ -98,6 +98,28 @@ class Piece {
             result.push([(i * 2), i]);
             result.push([-(i * 2), i]);
             result.push([-(i * 2), -i]);
+        }
+        return result;
+    }
+    getKingtRelativeMoves() {
+        let result = [];
+        result.push([0, 1]);
+        result.push([0, -1]);
+        result.push([1, 0]);
+        result.push([-1, 0]);
+        return result;
+    }
+    getQueentRelativeMoves() {
+        let result = [];
+        for (let i = 1; i < BOARD_SIZE; i++) {
+            result.push([i, i]);
+            result.push([-i, -i]);
+            result.push([-i, i]);
+            result.push([i, -i]);
+            result.push([i, 0]);
+            result.push([-i, 0]);
+            result.push([0, i]);
+            result.push([0, -i]);
         }
         return result;
     }
