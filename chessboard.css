@@ -5,7 +5,8 @@ body {
     font-size: 120%;
     background-color: rgba(13, 189, 80, 0.507);
 }
-table { 
+
+table {
     /* border-collapse: collapse; */
     border: 0.5px solid black;
     padding: 0;
@@ -13,20 +14,29 @@ table {
     margin-top: 100px;
     background-color: black;
 }
+
 td {
     width: 90px;
     height: 90px;
 }
+
 .light-cell {
     background-color: white;
 }
+
 .dark-cell {
     background-color: rgb(94, 89, 89);
 }
+
 .selected {
-background-color: rgba(103, 247, 175, 0.836);
+    background-color: rgba(247, 103, 103, 0.836);
 }
+
+.possible-move {
+    background-color: rgba(247, 183, 101, 0.836);
+}
+
 img {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
 }
